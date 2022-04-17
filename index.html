@@ -1,568 +1,837 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Francisco Alé Palacios | Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Comfortaa:700"
-      rel="stylesheet"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="index.css" />
-    <link rel="shortcut icon" href="images/iconblack.png" type="image/x-icon">
-    <link rel="icon" href="images/iconblack.png" type="image/x-icon">
-  </head>
-  <style>
-  .responsive {
-  width: 50%;
-  height: 40%;
-  border: 3px solid #48CA8F;
-}
-@media (min-width: 801px) {
-  .responsive {
-  width: 20%;
-  height: 10%;
-  border: 3px solid #48CA8F;
-}
-}
-@media (min-width: 600px) {
-  .responsive {
-  width: 30%;
-  height: 20%;
-  border: 3px solid #48CA8F;
-}
-}    
-</style>
-  <body>
-    <div id="loading">
-      <div id="spinner">
-      </div>
-    </div>
-    <div id="particles-js"></div>
-    <div id="box">
-      <div
-        class="box1 onlywide animated bounceOutLeft"
-        style="animation-delay:1.7s;"
-      ></div>
-      <div
-        class="box2 onlywide animated bounceOutLeft"
-        style="animation-delay:1.8s;"
-      ></div>
-      <div
-        class="box2 onlywide animated bounceOutLeft"
-        style="animation-delay:1.9s;"
-      ></div>
-      <div
-        class="box2 animated bounceOutRight"
-        style="animation-delay:1.9s;"
-      ></div>
-      <div
-        class="box2 onlywide animated bounceOutRight"
-        style="animation-delay:1.8s;"
-      ></div>
-      <div
-        class="box2 onlywide animated bounceOutRight"
-        style="animation-delay:1.7s;"
-      ></div>
-    </div>
-    <a
-      id="about"
-      onclick="showabout()"
-      class="animated fadeIn"
-      style="animation-delay:2.2s;"
-      >Sobre mí</a
-    >
-    <a
-      id="work"
-      onclick="showwork()"
-      class="animated fadeIn"
-      style="animation-delay:2.2s;"
-      >Mis Trabajos</a
-    >
-    <div id="middle" style="animation-delay:0.0s;">
-      <h1 >Francisco Alé Palacios</h1>
-      
-      <div id="menu">
-        <a onclick="showabout()">SOBRE MÍ</a>
-        <a onclick="showwork()">MIS TRABAJOS</a>
-      </div>
-      <table>
-        <tr>
-          <td class="animated zoomIn" style="animation-delay:0.2s;">
-            <a href="https://github.com/fraalepal" target="_blank"  class="social" ><i class="fab fa-github"></i></a>
-          </td>
-          <td class="animated zoomIn" style="animation-delay:0.4s;">
-            <a href="https://www.linkedin.com/in/francisco-al%C3%A9-palacios-173477195/" target="_blank" class="social"><i class="fab fa-linkedin"></i></a>
-          </td>
-          <td class="animated zoomIn" style="animation-delay:0.6s;">
-            <a href="https://play.google.com/store/apps/developer?id=Francisco+Al%C3%A9+Palacios&gl=ES" target="_blank" class="social"><i class="fab fa-google-play"></i></a>
-          </td>
-          <td class="animated zoomIn" style="animation-delay:0.6s;">
-            <a href="FranciscoAléPalaciosCV2022.pdf" download="" target="_blank" class="social"><i class="fas fa-male"></i></a>
-          </td>
-          
-        </tr>
-      </table>
-    </div>
-    <div id="work_container" class="container">
-    
-      <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-      <section>
-        
-          <h1 style="color: #48CA8F;">5. Mis Proyectos Personales________</h1>
-          <div class="p-data">
-            <img src="images/innosoft.png" width="100%" height="auto" />
-            <div class="p-top">
-              <div class="p-userimg"></div>
-              <div class="p-username"> InnoSoft Diplomas</div>
-              <div class="p-time">2021</div>
-              <hr />
-            </div>
-            <div class="p-text">
-              Aplicación de escritorio construida con:
-            </div>
-            <div class="p-text">
-              <ul>
-                <li>Python</li>
-                <li>Reportlab</li>
-                <li>pandas</li>
-                <li>Tkinter</li>
-              </ul>
-            </div>
-            <div class="p-text">
-              Aplicación de escritorio utilizada como herramienta de generación de certificados de asistencia del evento Jornadas InnoSoft realizado en la Escuela Técnica Superior de Ingeniería Informática de la Universidad de Sevilla.
-            </div>
-            <hr />
-            <div class="p-text">
-              <center><a href="https://github.com/pedbiefre/InnosoftDiploma" class="myButton">Github</a></center>
-            </div>
-          </div>
 
-          <div class="p-data">
-            <img src="images/nba.png" width="100%" height="auto" />
-            <div class="p-top">
-              <div class="p-userimg"></div>
-              <div class="p-username"> NBAII - Web scraping & Recommender System</div>
-              <div class="p-time">2021</div>
-              <hr />
-            </div>
-            <div class="p-text">
-              Aplicación web construida con:
-            </div>
-            <div class="p-text">
-              <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Beautifulsoup4</li>
-                <li>Whoosh</li>
-                <li>SQLite3</li>
-                <li>HTML5, CSS3, Bootstrap</li>
-              </ul>
-            </div>
-            <div class="p-text">
-              Aplicación web que permite realizar consultas sobre los equipos, jugadores, drafteados y noticias de la NBA. Se incluye un sistema de colaboración de filtrado colaborativo para ser usado como herramienta de soporte para páginas de ligas online.
-            </div>
-            <hr />
-            <div class="p-text">
-              <center><a href="https://github.com/fraalepal/aii-nba" class="myButton">Github</a></center>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francisco Alé Palacios | Portfolio</title>
 
-          <div class="p-data">
-            <img src="images/clustering.png" width="100%" height="auto" />
-            <div class="p-top">
-              <div class="p-userimg"></div>
-              <div class="p-username"> Clustering en anillos con ruido</div>
-              <div class="p-time">2020</div>
-              <hr />
-            </div>
-            <div class="p-text">
-              Notebook de investigación acerca del Clustering, realizado con:
-            </div>
-            <div class="p-text">
-              <ul>
-                <li>Python</li>
-                <li>numpy</li>
-                <li>matplotlib</li>
-              </ul>
-            </div>
-            <div class="p-text">
-              Notebook de investigación acerca de la tecnica de clustering con incertidumbre en anillos que presentan ruido (aprendizaje no supervisado)
-            </div>
-            <hr />
-            <div class="p-text">
-              <center><a href="https://github.com/fraalepal/clustering_ia" class="myButton">Github</a></center>
-            </div>
-          </div>
 
-          
+  <link rel="shortcut icon" href="./assets/images/iconblack.png" type="image/x-icon">
 
-          
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-          <div class="p-data">
-            <img src="images/ocioencasa.jfif" width="100%" height="auto" />
-            <div class="p-top">
-              <div class="p-userimg"></div>
-              <div class="p-username"> Ocio en casa</div>
-              <div class="p-time">2020</div>
-              <hr />
-            </div>
-            <div class="p-text">
-              Aplicación Android que recopila numerosos recursos gratuitos clasificados en diversas categorías para disfrutar del ocio desde casa:
-            </div>
-            <div class="p-text">
-              <ul>
-                <li>Adobe XD (Diseño de la interfaz de usuario)</li>
-                <li>Java</li>
-                <li>Firebase</li>
-                <li>Android Studio</li>
-              </ul>
-            </div>
-            <div class="p-text">
-              Consulta y actualización de datos en tiempo real sin refrescos.<br> +3600 descargas.
-            </div>
-            <hr />
-            <div class="p-text">
-              <center>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.softloyal.ocioencasa"
-                  class="myButton"
-                  >Descargar Aplicación</a
-                >
-              </center>
-            </div>
-          </div>
 
-          <div class="p-data">
-            <img src="images/sembrando.png" width="100%" height="auto" />
-            <div class="p-top">
-              <div class="p-userimg"></div>
-              <div class="p-username"> Sembrando Esperanza - Radiotelemaratón solidario</div>
-              <div class="p-time">2020</div>
-              <hr />
-            </div>
-            <div class="p-text">
-              Aplicación Android que recopila información acerca del evento solidario organizado por la Hermandad de los Gitanos de Utrera:
-            </div>
-            <div class="p-text">
-              <ul>
-                <li>Adobe XD (Diseño de la interfaz de usuario)</li>
-                <li>Java</li>
-                <li>Firebase</li>
-                <li>Android Studio</li>
-              </ul>
-            </div>
-            <div class="p-text">
-              Contiene secciones de Información, Programación, ¿Cómo colaborar? y consulta de catálogos de artículos de subasta y venta en tiempo real.<br>
-            </div>
-            <hr />
-            <div class="p-text">
-              <center>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.softloyal.ocioencasa"
-                  class="myButton"
-                  >Descargar Aplicación</a
-                >
-              </center>
-            </div>
-          </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
-          <div class="p-data">
-            <img src="images/subsave.png" width="100%" height="auto" />
-            <div class="p-top">
-              <div class="p-userimg"></div>
-              <div class="p-username"> Subsave</div>
-              <div class="p-time">2020</div>
-              <hr />
-            </div>
-            <div class="p-text">
-              Aplicación Android para gestionar suscripciones construida con:
-            </div>
-            <div class="p-text">
-              <ul>
-                <li>Adobe XD (Diseño de la interfaz de usuario)</li>
-                <li>Java</li>
-                <li>SQLite</li>
-                <li>Android Studio</li>
-              </ul>
-            </div>
-            <div class="p-text">
-              Enfoque prático de las operaciones CRUD de SQLite en Java.
-            </div>
-            <hr />
-            <div class="p-text">
-              <center><a href="mailto:fraalepal@hotmail.com" class="myButton"
-                  >Solicitar información</a
-                ></center>
-            </div>
-          </div>
+<body>
 
-          <div class="p-data">
-            <img src="images/maqueta.png" width="100%" height="auto" />
-            <div class="p-top">
-              <div class="p-userimg"></div>
-              <div class="p-username"> Utrera en Navidad</div>
-              <div class="p-time">2019</div>
-              <hr />
-            </div>
-            <div class="p-text">
-              Aplicación Android para el seguimiento de los eventos navideños de
-              Utrera contruida con:
-            </div>
-            <div class="p-text">
-              <ul>
-                <li>Proto.io (Diseño de la interfaz de usuario)</li>
-                <li>Java</li>
-                <li>Firebase</li>
-                <li>Android Studio</li>
-              </ul>
-            </div>
-            <div class="p-text">
-              Consulta y actualización de datos en tiempo real sin refrescos.
-            </div>
-            <hr />
-            <div class="p-text">
-              <center>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.softloyal.navidadutrera"
-                  class="myButton"
-                  >Descargar Aplicación</a
-                >
-              </center>
-            </div>
-          </div>
 
-          <div class="p-data">
-            <img src="images/ADMINAPP.png" width="100%" height="auto" />
-            <div class="p-top">
-              <div class="p-userimg"></div>
-              <div class="p-username"> Admin App</div>
-              <div class="p-time">2019</div>
-              <hr />
-            </div>
-            <div class="p-text">
-              Aplicación Web de gestión empresarial construida con:
-            </div>
-            <div class="p-text">
-              <ul>
-                <li>Adobe XD (Diseño de la interfaz de usuario)</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>HTML5, CSS3</li>
-                <li>JavaScript</li>
-                <li>Servidor XAMPP</li>
-              </ul>
-            </div>
-            <div class="p-text">
-              Incluye gestión de clientes, proveedores, servicios, trabajadores
-              (crear, consultar, editar y eliminar), además de un calendario
-              para la creación de eventos.
-            </div>
-            <hr />
-            <div class="p-text">
-              <center>
-                <a href="mailto:fraalepal@hotmail.com" class="myButton"
-                  >Solicitar información</a
-                >
-              </center>
-            </div>
-          </div>
+  <main>
 
-          
 
-          
+    <aside class="sidebar" data-sidebar>
 
-          
+      <div class="sidebar-info">
 
-         
+        <figure class="avatar-box">
+          <img src="./assets/images/yo.jpg" style="border-radius: 30px;" alt="Richard hanrick" width="80">
+        </figure>
 
-          
+        <div class="info-content">
+          <h2 class="name" title="Francisco Alé">Francisco Alé</h1>
 
-          
-
-          
-          
-
+            <p class="title">Ingeniero de Software</p>
         </div>
-      </section>
-    
-    <div id="about_container" class="container">
-      <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-      <h1>1. Información __________________</h1>
-      <section>
-        <!--<img style="width: 20%; border-radius: 500px;" src="images/curro.jpg"></img>-->
-        <div class="datos">
-          
-            <div id="nombre"><h2>Francisco Alé Palacios</h2>   </div>
-            <div id="sobremi">
-              <p>Ingeniero de Software. Data Analyst. </p>
 
-              <p style="width: 60%;">Interesado en el modelado, análisis / visualización de datos y desarrollo software de productos digitales.
-              En constante aprendizaje sobre las ramas de Data Analytics, Data Science y Software Engineering.</p>
-              
-              <p style="width: 60%;">Formado en el proceso de gestión, planificación, desarrollo 
-              y mantenimiento de aplicaciones móviles nativas (Android) 
-              y Progressive Web Apps haciendo uso de metodologías ágiles.</p>
-              
-            <div id="info"><i class="fas fa-map-marker-alt location" style="margin-right: 5px;"></i>  Utrera, Sevilla, España</div>
-            <div id="info"><i class="fab fa-github"></i><a style="text-decoration: none; margin-left: 5px; " target="_blank" href="https://github.com/fraalepal/">  https://github.com/fraalepal/</a> </div>
-          </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Contacto</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:franciscoalepalacios@gmail.com" class="contact-link">franciscoalepalacios@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Teléfono</p>
+
+              <a href="tel:+34684136582" class="contact-link">+34 684 13 65 82</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Fecha de nacimiento</p>
+
+              <time datetime="1982-06-23">1 de Agosto, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ubicación</p>
+
+              <address>Utrera, Sevilla</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/fraalepal" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <div class="main-content">
+
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h3 article-title">Sobre mí</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            ¡Hola! Mi nombre es Curro Alé, soy Ingeniero de Software y Data Analyst.<br>
+            Soy un apasionado de la tecnología, la programación, la música y los tatuajes.<br>
+            Actualmente me encuentro aprendiendo nuevas cosas día a día y principalmente estoy interesado en el desarrollo software de productos digitales,
+            la gestión de proyectos, el desarrollo en entornos Cloud y todo lo relacionado con Data e IA. </p>
+
+          <p>¡Una de mis principales aficiones es el aprendizaje continuo! Es por ello que parte de mi tiempo lo libre lo invierto en el
+            aprendizaje sobre todo tipo de cosas relacionadas con las ramas de Software Engineering, Cloud Computing y Data Analytics. </p></p>
             
-        </div>
-        
-        
-      </section>
-      <h1>2. Experiencia Profesional __________________</h1>
-      <section>
-        <div class="datos">
+          <p>
+
+            Durante mi etapa universitaria me he formado tanto academica como extra-academicamente en el proceso de gestión, planificación, desarrollo y mantenimiento de aplicaciones móviles nativas
+            (Android) y Progressive Web Apps haciendo uso de metodologías ágiles. </p>
+
+            <p>
+
+            Profesionalmente he podido desarrollar soluciones software (Django) para entornos Data & Analytics y soluciones haciendo uso de diversas tecnología como Python, SQL, SAP HANA, SAP BW, SAP BO o SAP Analytics Cloud.<br>
+            Además he podido participar activamente en tareas de gestión de proyectos, reparto de tareas, planificaciones y estimaciones y comunicaciones con clientes nacionales e internaciones.</p>
+        </section>
+
+
+
+        <section class="service">
+
+          <header>
+            <h2 class="h3 article-title">¿A qué me dedico?</h2>
+          </header>
+
+          <ul class="service-list">
+
+            
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo de Software</h4>
+
+                <p class="service-item-text">
+                  Diseño y desarrollo de Progressive Web Apps.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo móvil</h4>
+
+                <p class="service-item-text">
+                  Diseño y desarrollo de aplicaciones Android nativas.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Análisis de datos</h4>
+
+                <p class="service-item-text">
+                  Análisis, modelado y visualización de datos.
+                </p>
+              </div>
+
+            </li>
+
+
+
+          </ul>
+
+        </section>
+        <br><br>
+
+        <section class="clients">
+
+          <header>
+            <h2 class="h3 article-title">¿Con quién he trabajado?</h2>
+          </header>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/sdg.png" alt="SDG Group Iberia">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/matsa.png" alt="MATSA">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/cepsa.png" alt="Cepsa">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logista.png" alt="Logista France">
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+        <br><br>
+        <section class="clients">
+
+          <header>
+            <h2 class="h3 article-title">Tecnologías Principales (Software Factory)</h2>
+          </header>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/python.png" alt="Python">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/django.png" alt="Django">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/java.png" alt="Java">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/androidjava.png" alt="Android Native">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/spring.png" alt="Spring Boot">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/sql.png" alt="SQL">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/firebase.png" alt="Firebase">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/github.png" alt="Github">
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+        <br><br>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Professional Certification IBM Full Stack Cloud Developer</h4>
+
+              <h4 class="h4 timeline-item-title">IBM</h4>
+              <span>2022 — Actualidad</span>
+
+              <p class="timeline-text">
+                Cloud foundations, HTML, CSS, JavaScript, GitHub, Node.js, React, Cloud Native practices, DevOps, CI/CD,
+                Containers, Docker, Kubernetes, OpenShift, Istio, Python programming, Databases, SQL, NoSQL, Django ORM,
+                Bootstrap, Application Security, Microservices, Serverless computing
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Grado en Ingeniería Informática - Ingeniería del Software</h4>
+
+              <h4 class="h4 timeline-item-title">Universidad de Sevilla</h4>
+              <span>2017 — 2021</span>
+
+              <p class="timeline-text">
+                Trabajo Fin de Grado - Sistema de ayuda para la monitorización y
+                estimulación cognitiva de personas con Alzheimer [Calificación: 10 - Matrícula de Honor]
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">B2 Cambrigde Assessment</h4>
+              <h4 class="h4 timeline-item-title">English Connection Utrera</h4>
+              <span>2020</span>
+
+              <p class="timeline-text">
+                Linguaskill (172)
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+        <br><br>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formación Adicional - Cursos</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Introduction to Data Engineering (12h)</h4>
+
+              <h4 class="h4 timeline-item-title">Coursera</h4>
+              <span>2022</span>
+            </li>
           
-            <h2>SDG Group Iberia</h2>
-            <div id="nombre"><h3>06/2021 - Actualidad</h3>   </div>
-            <div id="sobremi">
-              <p style="font-style: italic;">Data Analyst. </p>
+            <li class="timeline-item">
 
-              <p style="width: 60%;">
-                <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> SQL Scripting.</p>
-                <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> SAP HANA Modeling View (Calculation Views, Table Functions, SQL Script View).</p>
-                <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Creation of Advanced DSOs, Tranformations, Data Transport Processes (SAP BW/4HANA).</p>
-                <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Creation of reports and dashboards using SAP Analytics Cloud.</p>
-                <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> AMDPs.</p>
-                <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Creation of technical, functional documentation and test scripts.</p>
-                <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Communication with clients and tasks planning.</p>
-              
-                        
-        </div>
-        
-        
-      </section>
-      <section>
-        <h1>2. Habilidades ________</h1>
-        <h2>2.1 Tecnologías</h2>
-        <p>Estas son algunas de las tecnologías que utilizo con más frecuencia:</p>
-        <h2>2.1.1 Desarrollo de Software</h2>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Python</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Django</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Java</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Java for Android</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Spring Boot</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> HTML5, CSS3, JavaScript, Bootstrap5</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> MySQL</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Firebase</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> SQLite3</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> WordPress</p>
-        <br>
-        <h2>2.1.2 Data & Analytics</h2>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Python</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> SQL-Scripting</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Power BI</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> SAP HANA</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> SAP Analytics Cloud</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> SAP BW</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> SAP BO</p>
-        
-        <br>
-        <h2>2.2 Diseño</h2>
-        <p>Estas son las herramientas que utilizo para el diseño de Interfaces de usuario:</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Photoshop</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Adobe XD</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Proto.io</p>
-        <br>
-        <h2>2.2 Gestión de proyectos</h2>
-        <p>Estas son las herramientas que utilizo para la gestión de código fuente e incidencias:</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Github</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Github Projects</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Github Desktop</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Zenhub</p>
-        <p><i style="color: #48CA8F;" class="fas fa-angle-right"> </i> Notion</p>
-       
-      </section>
-      <section>
-        <h1>3. Cursos _________</h1><br><hr>
-        <p>Introducción al Desarrollo Web I</p>
-        <p style="font-style: italic;">Instituto de Economía Internacional - Google Activate</p>
-        <p style="font-style: italic;">Mayo de 2019.</p>
-        <p style="font-style: italic;">ID de la credencial: JCQ BTD TCH</p><hr>
-        <p>Introducción al Desarrollo Web II</p>
-        <p style="font-style: italic;">Instituto de Economía Internacional - Google Activate</p>
-        <p style="font-style: italic;">Junio de 2019.</p>
-        <p style="font-style: italic;">ID de la credencial: SEC 5NM R3X</p><hr>
-        <p>Desarrollo de Apps Móviles</p>
-        <p style="font-style: italic;">Universidad Complutense de Madrid - Google Activate</p>
-        <p style="font-style: italic;">Octubre de 2019.</p>
-        <p style="font-style: italic;">ID de la credencial: 7P7 44L UJZ</p><hr>
+              <h4 class="h4 timeline-item-title">Python Essentials I & II</h4>
 
-      </section>
-      <section>
-        <h1>4. Referencias y menciones _________</h1>
-        <p>Periodico Utrera Digital (Ocio en casa)</p>
-        <a style="font-style: italic;" target="_blank" 
-          href="https://www.utreradigital.com/web/2020/04/08/un-joven-utrerano-crea-una-aplicacion-movil-con-numerosos-recursos-gratuitos-para-pasar-el-confinamiento/">
-          Pulse aquí para visualizar el contenido</a>
-        <hr>
-        <p>Periodico ABC Sevilla (Ocio en casa)</p>
-        <a style="font-style: italic;" target="_blank"
-        href="https://sevilla.abc.es/provincia/utrera/sevi-joven-utrerano-crea-para-disfrutar-ocio-durante-confinamiento-coronavirus-202004040839_noticia.html">
-        Pulse aquí para visualizar el contenido</a>
-        <hr>
-        <p>Periodico Utrera Online (Presentación del evento y aplicación Sembrando Esperanza)</p>
-        <a style="font-style: italic;" target="_blank"
-        href="https://www.lospalaciosonline.es/general/noticias/0/23511/Utrera-sembrara-Esperanza-el-proximo-26-de-junio-de-la-mano-de-la-Hermandad-de-los-Gitanos-/">
-        Pulse aquí para visualizar el contenido</a>
-        <hr>
-        <p>Periodico Utrera Online (Sembrando esperanza - Radiotelemaratón solidario)</p>
-        <a style="font-style: italic;" target="_blank"
-        href="https://www.utreraonline.es/Utrera/noticias/0/23550/Ya-puede-descargarse-la-App-Sembrando-Esperanza-/">
-        Pulse aquí para visualizar el contenido</a>
-        <hr>
-        <p>Universidad de Sevilla (Mención por "Ocio en casa")</p>
-        <a style="font-style: italic;" target="_blank"
-        href="https://twitter.com/unisevilla/status/1247893222807855113">
-        Pulse aquí para visualizar el contenido</a>
-        <hr>
-        <p>Junta de Andalucía (Mención por "Ocio en casa")</p>
-        <a style="font-style: italic;" target="_blank"
-        href="https://www.facebook.com/188280011246288/posts/3613475665393355/">
-        Pulse aquí para visualizar el contenido</a>
-        <hr>
-        <p>Junta de Andalucía (Mención por "Ocio en casa")</p>
-        <a style="font-style: italic;" target="_blank"
-        href="https://twitter.com/AndaluciaJunta/status/1247987331325444099">
-        Pulse aquí para visualizar el contenido</a>
-        <hr>
-        <p>ABC Sevilla (Mención por "Ocio en casa")</p>
-        <a style="font-style: italic;" target="_blank"
-        href="https://twitter.com/abcdesevilla/status/1246358106700996608">
-        Pulse aquí para visualizar el contenido</a>
-        </a>
-        <hr>
-      </section>
+              <h4 class="h4 timeline-item-title">Python Institute</h4>
+              <span>2022</span>
+            </li>
 
-      <section>
-        <h1>5. Contacto _________</h1>
-        <div id="info"><i class="far fa-envelope"></i><a href="mailto:franciscoalepalacios@gmail.com" target="_blank" style="text-decoration: none; color: aliceblue; margin-left: 5px;">  franciscoalepalacios@gmail.com</a> </div>
+            <li class="timeline-item">
 
-      </section>
+              <h4 class="h4 timeline-item-title">Bootcamp Data & Analytics (35h)</h4>
+
+              <h4 class="h4 timeline-item-title">SDG Hub Academy</h4>
+              <span>2022</span>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SAP BW/4HANA Fundamentals (20h)</h4>
+
+              <h4 class="h4 timeline-item-title">SDG Hub Academy</h4>
+              <span>2021</span>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SQL for Data (12h)</h4>
+
+              <h4 class="h4 timeline-item-title">SDG Hub Academy</h4>
+              <span>2021</span>
+            </li>
+           
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Introducción al Desarrollo Web I (40h)</h4>
+
+              <h4 class="h4 timeline-item-title">Google Activate - IEI</h4>
+              <span>2019</span>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Introducción al Desarrollo Web II (40h)</h4>
+
+              <h4 class="h4 timeline-item-title">Google Activate - IEI</h4>
+              <span>2019</span>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Desarrollo de Apps Móviles (40h)</h4>
+
+              <h4 class="h4 timeline-item-title">Google Activate - UCM</h4>
+              <span>2019</span>
+            </li>
+
+          </ol>
+
+        </section>
+        <br><br>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia Profesional</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SDG Group Iberia</h4>
+              <h4 class="h4 timeline-item-title">Data Analyst</h4>
+
+              <span>06/2021 — Actualidad</span>
+
+              <p class="timeline-text">
+                ◾ SQL Scripting. <br>
+                ◾ SAP HANA Modeling View (Calculation Views, Table Functions, SQL Script).<br>
+                ◾ Creation of Advanced DSOs, TRFNs, DTPs (SAP BW/4HANA).<br>
+                ◾ Creation of reports and dashboards using SAP Analytics Cloud.<br>
+                ◾ AMDPs.<br>
+                ◾ Creation of technical, functional documentation and test scripts.<br>
+                ◾ Communication with clients and tasks planning.<br>
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+        <br><br>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="terminal"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia Personal</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Desarrollo de PWAs</h4>
+              <span>2020 — Actualidad</span>
+
+              <p class="timeline-text">
+                ◾ Python/Django. <br>
+                ◾ Java/Spring Boot.<br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Desarrollo de aplicaciones móviles nativas</h4>
+
+              <span>2019 — Actualidad</span>
+
+              <p class="timeline-text">
+                ◾ Java for Android. <br>
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+        <br><br>
+        <section class="projects">
+
+          <header>
+            <h2 class="h3 article-title">Proyectos personales</h2>
+          </header>
+
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://www.mytattoostuff.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mytattoostuff.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MyTattooStuff (2021 - Actualidad)</h3>
+
+                <p class="project-category">Blog sobre marketing, materiales y diseños 
+                  de tatuajes. +35k de usuarios activos en redes.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://faomemory.herokuapp.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/faomemory.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FAOMEMORY (2021 - Actualidad)</h3>
+
+                <p class="project-category">Aplicación Web de estimulación y monitorización cognitiva 
+                  para personas con Alzheimer. </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/fraalepal/aii-nba">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/nbaii.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">NBAII (2021)</h3>
+
+                <p class="project-category">App auxiliar para Liga Fantasy de la NBA que reune análisis de rendimiento de jugadores, equipos, noticas, etc.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/Groomeet/groomeet">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/groomeet.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Groomeet ¿Hacemos música? (2021)</h3>
+
+                <p class="project-category">Herramienta que ofrece servicios a músicos y bandas de tu zona que desean colaborar.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://play.google.com/store/apps/details?id=com.softloyal.ocioencasa&gl=ES">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ocio.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ocio en Casa (2020)</h3>
+
+                <p class="project-category">Aplicación Android que reune numerosos recursos gratuitos para disfrutar del Ocio en casa.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://play.google.com/store/apps/details?id=com.softloyal.sembrandoesperanza">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sembrando.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sembrando Esperanza (2020)</h3>
+
+                <p class="project-category">Aplicación Android para el evento solidario organizado por la Hdad de los Gitanos de Utrera.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://play.google.com/store/apps/details?id=com.softloyal.navidadutrera">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/utreranavidad.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Utrera en Navidad (2019)</h3>
+
+                <p class="project-category">Aplicación Android que reune los eventos navideños programados por la Oficina de Turismo.</p>
+
+              </a>
+            </li>
+
+            
+
+
+
+          </ul>
+
+        </section>
+        <br><br>
+
+        <section class="projects">
+
+          <header>
+            <h2 class="h3 article-title">Referencias en medios</h2>
+          </header>
+
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://www.utreradigital.com/web/2020/04/08/un-joven-utrerano-crea-una-aplicacion-movil-con-numerosos-recursos-gratuitos-para-pasar-el-confinamiento/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/referencia1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Periodico Utrera Digital</h3>
+
+                <p class="project-category">Aplicación Ocio en Casa</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://sevilla.abc.es/provincia/utrera/sevi-joven-utrerano-crea-para-disfrutar-ocio-durante-confinamiento-coronavirus-202004040839_noticia.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/referencia2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Periodico ABC Sevilla</h3>
+
+                <p class="project-category">Aplicación Ocio en Casa</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://www.facebook.com/188280011246288/posts/3613475665393355/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/referencia4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RRSS Junta de Andalucía</h3>
+
+                <p class="project-category">Aplicación Ocio en Casa</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.utreraonline.es/Utrera/noticias/0/23550/Ya-puede-descargarse-la-App-Sembrando-Esperanza-/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/referencia3.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Periodico Utrera Online</h3>
+
+                <p class="project-category">Aplicación Sembrando Esperanza</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.lospalaciosonline.es/general/noticias/0/23511/Utrera-sembrara-Esperanza-el-proximo-26-de-junio-de-la-mano-de-la-Hermandad-de-los-Gitanos-/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/referencia5.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Periodico Utrera Online</h3>
+
+                <p class="project-category">Aplicación Sembrando Esperanza</p>
+
+              </a>
+            </li>
+
+            
+
+
+
+          </ul>
+
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
-    <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-  </body>
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
